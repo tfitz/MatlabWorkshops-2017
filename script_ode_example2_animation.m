@@ -141,7 +141,7 @@ for i = 1:nframes
         'YData', pendulum_y_pt(z));
     
     % pause so we can actually watch the animation
-    pause(0.01)
+    pause(tf/nframes)
     
     % caputure an image of the figure, and write it to the movie
     if flag_save
